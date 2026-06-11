@@ -82,14 +82,16 @@
 /* Same color for all demo icons */
 .demo-icon { background: #8b5cf6; }
 
-/* Special color for Hebrew-English Mixed Input */
-.demo-item:nth-child(2) .demo-icon { background: #10b981; }
+.demo-icon-renikud { background: #6366f1; }
 
-/* Special color for Voice Cloning Integration */
-.demo-item:nth-child(3) .demo-icon { background: #f59e0b; }
+/* ZipVoice Hebrew Model */
+.demo-item:nth-child(3) .demo-icon { background: #10b981; }
 
-/* Special color for Zonos Hebrew Model */
-.demo-item:nth-child(5) .demo-icon { background: #3b82f6; }
+/* Voice Cloning Integration */
+.demo-item:nth-child(4) .demo-icon { background: #f59e0b; }
+
+/* Zonos Hebrew Model */
+.demo-item:nth-child(6) .demo-icon { background: #3b82f6; }
 
 .demo-meta {
   flex: 1;
@@ -128,12 +130,28 @@
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-top: auto;
+  line-height: 0;
+}
+
+.demo-video-container-preview {
+  margin-top: 0;
+}
+
+.demo-card:has(.demo-preview) {
+  min-height: auto;
 }
 
 .demo-video {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.demo-preview {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: top;
 }
 
 
