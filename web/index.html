@@ -12,22 +12,21 @@
 
     <!-- Page Title -->
     <title>
-        Phonikud: Hebrew Grapheme-to-Phoneme Conversion for Real-Time
-        Text-to-Speech
+        Phonikud: Overcoming Phonetic Underspecification for Hebrew Text-To-Speech
     </title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="A novel approach for real-time Hebrew TTS that addresses phonetic ambiguity with grapheme-to-phoneme conversion." />
+        content="Phonikud: real-time Hebrew TTS with grapheme-to-phoneme conversion. Interspeech 2026." />
     <meta name="keywords"
         content="Phonikud, Hebrew TTS, text-to-speech, phonetic disambiguation, real-time synthesis, Hebrew NLP, speech synthesis" />
 
     <!-- Open Graph (Facebook, LinkedIn, Telegram, WhatsApp) -->
     <meta property="og:url" content="https://phonikud.github.io/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Phonikud: Hebrew Grapheme-to-Phoneme Conversion for Real-Time Text-to-Speech" />
+    <meta property="og:title" content="Phonikud: Overcoming Phonetic Underspecification for Hebrew Text-To-Speech" />
     <meta property="og:description"
-        content="A novel approach for real-time Hebrew TTS that addresses phonetic ambiguity with grapheme-to-phoneme conversion." />
+        content="Phonikud: real-time Hebrew TTS with grapheme-to-phoneme conversion. Interspeech 2026." />
     <meta property="og:image" content="https://thewh1teagle.github.io/phonikud-paper/media/architecture.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
@@ -38,9 +37,9 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:domain" content="phonikud.github.io" />
     <meta name="twitter:url" content="https://phonikud.github.io" />
-    <meta name="twitter:title" content="Phonikud: Hebrew Grapheme-to-Phoneme Conversion for Real-Time Text-to-Speech" />
+    <meta name="twitter:title" content="Phonikud: Overcoming Phonetic Underspecification for Hebrew Text-To-Speech" />
     <meta name="twitter:description"
-        content="A novel approach for real-time Hebrew TTS that addresses phonetic ambiguity with grapheme-to-phoneme conversion." />
+        content="Phonikud: real-time Hebrew TTS with grapheme-to-phoneme conversion. Interspeech 2026." />
     <meta name="twitter:image" content="https://thewh1teagle.github.io/phonikud-paper/media/architecture.png" />
 
     <!-- Favicon -->
@@ -66,8 +65,8 @@
             <div class="hero-content">
                 <h1>Phonikud</h1>
                 <p class="hero-subtitle">
-                    Hebrew Grapheme-to-Phoneme Conversion <br />for Real-Time
-                    Text-to-Speech
+                    Overcoming Phonetic Underspecification <br />for Hebrew
+                    Text-To-Speech
                 </p>
 
                 <div class="author-list">
@@ -158,7 +157,7 @@
         </div>
         <div class="abstract-content">
             <p>
-                Real-time text-to-speech for Modern Hebrew is challenging due to its complex writing system and underspecified phonetic features. <em>Phonikud</em> is a lightweight, open-source grapheme-to-phoneme system that produces fully-specified IPA transcriptions with minimal latency. Alongside it, we release <em>ILSpeech</em>, an expert-annotated Hebrew speech dataset for benchmarking and training.
+                Text-to-speech for Modern Hebrew is challenged by underspecified phonetic features such as vowels and stress. <em>Phonikud</em> is an open-source grapheme-to-phoneme system that produces fully specified IPA transcriptions for more accurate Hebrew TTS. The project also introduces <em>ILSpeech</em>, a Hebrew audio, text, and IPA corpus for G2P benchmarking, TTS training, and audio-to-IPA evaluation.
             </p>
         </div>
     </div>
@@ -450,13 +449,11 @@
                 <button class="copy-btn" onclick="copyToClipboard()">
                     <i data-lucide="copy"></i>
                 </button>
-                <pre><code>@misc{kolani2025phonikud,
-  title={Phonikud: Hebrew Grapheme-to-Phoneme Conversion for Real-Time Text-to-Speech},
+                <pre><code class="language-bibtex">@inproceedings{kolani2026phonikud,
+  title={Phonikud: Overcoming Phonetic Underspecification for Hebrew Text-To-Speech},
   author={Yakov Kolani and Maxim Melichov and Cobi Calev and Morris Alper},
-  year={2025},
-  eprint={2506.12311},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
+  booktitle={Proc. Interspeech 2026},
+  year={2026},
   url={https://arxiv.org/abs/2506.12311},
 }</code></pre>
             </div>
@@ -469,6 +466,7 @@
             <div class="footer-content">
                 <div class="footer-left">
                     <p class="copyright">Phonikud. Open Source Hebrew Grapheme to Phoneme</p>
+                    <p class="footer-venue">Interspeech 2026</p>
                 </div>
                 <div class="footer-right">
                     <div class="footer-links">
@@ -487,6 +485,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
     <script src="single-media-playback.js"></script>
     <script src="script.js"></script>
 </body>

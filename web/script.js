@@ -3,6 +3,31 @@ lucide.createIcons();
 
 // Single media playback functionality is in single-media-playback.js
 
+if (typeof hljs !== 'undefined') {
+    hljs.registerLanguage('bibtex', (hljs) => ({
+        name: 'BibTeX',
+        case_insensitive: true,
+        contains: [
+            hljs.COMMENT('%', '$'),
+            { className: 'keyword', begin: /@[a-z]+(?=\{)/i },
+            { className: 'symbol', begin: /(?<=\{)[a-z0-9_-]+(?=,)/i },
+            { className: 'attr', begin: /\b[a-z]+\s*(?==)/i },
+            {
+                className: 'string',
+                begin: /=\s*\{/,
+                end: /\}/,
+                excludeBegin: true,
+                excludeEnd: true,
+            },
+            { className: 'punctuation', begin: /[{},=]/ },
+        ],
+    }));
+
+    document.querySelectorAll('.citation-box code.language-bibtex').forEach((el) => {
+        hljs.highlightElement(el);
+    });
+}
+
 // Copy citation function
 function copyToClipboard() {
     const citation = document.querySelector('.citation-box pre code').textContent;

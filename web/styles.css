@@ -95,7 +95,7 @@ section {
   font-size: var(--font-size-hero-subtitle);
   font-weight: 400;
   color: var(--text-secondary);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -612,10 +612,12 @@ audio {
 }
 
 .citation-box {
-  background: var(--text-primary);
-  color: var(--surface);
+  background: var(--surface);
+  color: var(--text-primary);
   padding: var(--spacing-lg);
   border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(26, 23, 34, 0.04);
   font-family: "JetBrains Mono", monospace;
   font-size: var(--font-size-small);
   line-height: 1.6;
@@ -624,8 +626,42 @@ audio {
 }
 
 .citation-box pre {
-  background: var(--text-primary);
-  color: var(--surface);
+  background: transparent;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.citation-box pre code.hljs {
+  background: transparent;
+  color: var(--text-primary);
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--font-size-small);
+  line-height: 1.75;
+  tab-size: 2;
+}
+
+.citation-box .hljs-keyword {
+  color: #6d28d9;
+  font-weight: 600;
+}
+
+.citation-box .hljs-symbol {
+  color: #0369a1;
+  font-weight: 500;
+}
+
+.citation-box .hljs-attr {
+  color: #b45309;
+  font-weight: 500;
+}
+
+.citation-box .hljs-string {
+  color: #047857;
+}
+
+.citation-box .hljs-punctuation {
+  color: var(--text-muted);
 }
 
 /* ===== FOOTER ===== */
@@ -646,6 +682,12 @@ audio {
   color: var(--text-secondary);
   font-size: var(--font-size-small);
   margin: 0;
+}
+
+.footer-venue {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  margin: 0.25rem 0 0;
 }
 
 .footer-nav {
